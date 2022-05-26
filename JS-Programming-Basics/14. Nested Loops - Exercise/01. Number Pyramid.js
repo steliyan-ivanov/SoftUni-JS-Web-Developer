@@ -1,0 +1,3 @@
+function numberPyramid(input) {
+
+}
