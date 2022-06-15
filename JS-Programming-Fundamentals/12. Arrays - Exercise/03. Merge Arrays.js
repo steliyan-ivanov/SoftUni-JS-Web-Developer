@@ -1,22 +1,13 @@
-function mergeArrays(string1, string2) {
+function mergeArrays(array1, array2) {
 
-    let array1 = [];
-    let array2 = [];
+
     let array3 = [];
-
-    for (let el of string1) {
-        array1.push(Number(el))
-    }
-
-    for (let el of string2) {
-        array2.push(Number(el))
-    }
 
 
     for (let i = 0; i < array1.length; i++) {
 
         if (i % 2 == 0) {
-            array3.push(array1[i] + array2[i])
+            array3.push(Number(array1[i]) + Number(array2[i]))
         } else {
             array3.push(`${array1[i]}${array2[i]}`)
         }
