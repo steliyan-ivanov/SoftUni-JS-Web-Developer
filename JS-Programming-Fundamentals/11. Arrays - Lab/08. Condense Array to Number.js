@@ -1,4 +1,5 @@
 function condenseArrayToNumber(numbers) {
+
     let result = []
     for (let el of numbers) {
         result.push(el);
