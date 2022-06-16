@@ -3,13 +3,22 @@ function maxNumber(array) {
     let newArray = [];
     let arrayL = array.length;
 
-    for (let i = 0; i < arrayL; i++) {
+    for (let index = 0; index < arrayL; index++) {
+
+        let number1 = array[index]
+        let isLargest = true;
 
     }
+
+
+
+}
+
+console.log(newArray);
 
 
 
 
 }
 
-maxNumber([1, 4, 3, 2])
+maxNumber([27, 19, 42, 2, 13, 45, 48])
