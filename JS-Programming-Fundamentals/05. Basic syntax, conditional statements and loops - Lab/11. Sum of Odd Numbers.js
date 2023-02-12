@@ -1,19 +1,15 @@
 function solve(n) {
 
-    let counter = 0;
     let sum = 0;
 
-    for (i = 1; i <= 100; i += 2) {
-        console.log(i);
-        counter++;
-        sum += i;
+    for (let i = 1; i <= n*2; i++) {
 
-        if (counter == n) {
-            console.log(`Sum: ${sum}`);
-            break;
+        if (i % 2 !== 0) {
+            console.log(i);
+            sum += i;
         }
-
     }
+console.log(`Sum: ${sum}`);
 }
 
 solve(5)

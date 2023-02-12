@@ -1,8 +1,7 @@
-function solve(m, n) {
-    while (m >= n) {
-        console.log(m);
-        m--;
+function solve(n, m) {
+    while (n >= m) {
+        console.log(n);
+        n--;
     }
 }
-
-solve(6, 2)
+solve(4,1)

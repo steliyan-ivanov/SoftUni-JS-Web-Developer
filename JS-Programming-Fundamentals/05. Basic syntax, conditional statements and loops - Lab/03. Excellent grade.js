@@ -1,9 +1,9 @@
 function solve(grade) {
-    if (grade >= 5.50) {
-        console.log('Excellent');
+    if (grade >=5.50) {
+        console.log(`Excellent`);
     } else {
-        console.log('Not excellent');
+        console.log(`Not excellent`);
     }
 }
 
-solve(5.51)
+solve(4.35)
