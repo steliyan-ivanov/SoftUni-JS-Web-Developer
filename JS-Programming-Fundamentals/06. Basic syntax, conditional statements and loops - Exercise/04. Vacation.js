@@ -1,54 +1,66 @@
-function vacantion(groupe, type, day) {
-
-    let dayPrice = 0;
-
+function solve(number, type, day) {
+    let price = 0;
     switch (type) {
         case 'Students':
-            if (day === 'Friday') {
-                dayPrice = 8.45;
-            } else if (day === 'Saturday') {
-                dayPrice = 9.80;
-            } else if (day === 'Sunday') {
-                dayPrice = 10.46;
+            switch (day) {
+                case 'Friday':
+                    price = 8.45;
+                    break;
+                case 'Saturday':
+                    price = 9.80;
+                    break;
+                case 'Sunday':
+                    price = 10.46;
+                    break;
             }
             break;
-
         case 'Business':
-            if (day === 'Friday') {
-                dayPrice = 10.90;
-            } else if (day === 'Saturday') {
-                dayPrice = 15.60;
-            } else if (day === 'Sunday') {
-                dayPrice = 16;
+            switch (day) {
+                case 'Friday':
+                    price = 10.90;
+                    break;
+                case 'Saturday':
+                    price = 15.60;
+                    break;
+                case 'Sunday':
+                    price = 16;
+                    break;
             }
             break;
-
         case 'Regular':
-            if (day === 'Friday') {
-                dayPrice = 15;
-            } else if (day === 'Saturday') {
-                dayPrice = 20;
-            } else if (day === 'Sunday') {
-                dayPrice = 22.50;
+            switch (day) {
+                case 'Friday':
+                    price = 15;
+                    break;
+                case 'Saturday':
+                    price = 20;
+                    break;
+                case 'Sunday':
+                    price = 22.50;
+                    break;
             }
+            break;
+        default:
             break;
     }
 
-    let total = dayPrice * groupe;
+    price = price.toFixed(2);
 
-    if (type === "Students" && groupe >= 30) {
+    let total = number * price;
+
+    if (number >= 30 && type === 'Students') {
         total *= 0.85;
-    } else if (type === "Business" && groupe >= 100) {
-        total = (groupe - 10) * dayPrice;
-    } else if (type === "Regular" && groupe >= 10 && groupe <= 20) {
-        total *= 0.95
+    } else if (number >= 100 && type === 'Business') {
+        total = (number - 10) * price;
+    } else if (number >= 10 && number <=20 && type === 'Regular') {
+        total *= 0.95;
     }
 
     console.log(`Total price: ${total.toFixed(2)}`);
 
 }
 
-vacantion(30,
-    "Students",
-    "Sunday"
-)
+solve(40,
+    "Regular",
+    "Saturday"    
+    )

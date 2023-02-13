@@ -1,26 +1,22 @@
-function division(num) {
+function solve(num) {
 
-    let divNumber = 0;
+    let devision = 0;
 
     if (num % 10 == 0) {
-        divNumber = 10;
-        console.log(`The number is divisible by ${divNumber}`);
+        devision = 10;
     } else if (num % 7 == 0) {
-        divNumber = 7;
-        console.log(`The number is divisible by ${divNumber}`);
+        devision = 7;
     } else if (num % 6 == 0) {
-        divNumber = 6;
-        console.log(`The number is divisible by ${divNumber}`);
+        devision = 6;
     } else if (num % 3 == 0) {
-        divNumber = 3;
-        console.log(`The number is divisible by ${divNumber}`);
+        devision = 3;
     } else if (num % 2 == 0) {
-        divNumber = 2;
-        console.log(`The number is divisible by ${divNumber}`);
+        devision = 2;
     } else {
-        console.log('Not divisible');
+        console.log(`Not divisible`);
+        return;
     }
-
+    console.log(`The number is divisible by ${devision}`);
 }
 
-division(1643)
+solve(1643)
