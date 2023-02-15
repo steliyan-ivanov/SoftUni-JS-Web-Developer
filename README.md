@@ -1,12 +1,9 @@
 # <p align="center"> Courses from the main program in SoftUni <p>
 
-<a href="https://softuni.bg/trainings/courses" rel="Courses"> ![SoftUni logo][logo] </a>
+<p align="center">
+    <a href="https://softuni.bg/trainings/courses"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Logo_Software_University_%28SoftUni%29_-_blue.png/214px-Logo_Software_University_%28SoftUni%29_-_blue.png" alt="СофтУни лого"></a>
+</p>
 
-<!-- [logo]: http://innovationstarterbox.bg/wp-content/uploads/2016/05/Softuni_logo_trasparent.png "Logo Title Text 2" -->
-[logo]: https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Logo_Software_University_%28SoftUni%29_-_blue.png/214px-Logo_Software_University_%28SoftUni%29_-_blue.png "Logo Title Text 2"
-
-<br/>
-<br/>
 <br/>
 
 <h2> Certificates </h2>
